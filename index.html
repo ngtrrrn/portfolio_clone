@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <!-- user-scalable=noは拡大縮小の禁止 -->
@@ -13,27 +14,453 @@
   <meta property="og:description" content='とろろんぴのポートフォリオです。'>
   <meta property="og:image" content='img/ogp.png'>
 
+  <meta name="description" content="とろろんぴのポートフォリオです。" />
+
   <title>Tororonpi Portfolio</title>
 
   <!-- Google font API -->
   <link href="https://fonts.googleapis.com/css?family=Yesteryear" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet">
-  <!-- 商用無料のアイコン -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-  <!-- bootstrap -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
   <!-- ブラウザ毎のデフォルト設定を無効にするCSS -->
   <!-- クローン元とは違うCSSを使用中 -->
   <link href="css/reset.css" media="all" rel="stylesheet" type="text/css" />
 
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <!-- 写真のスライド表示機能 -->
   <link href="css/photoswipe/photoswipe.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="css/photoswipe/default-skin/default-skin.css" media="all" rel="stylesheet" type="text/css" />
 
+  <!-- 商用無料のアイコン -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+    integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
+  <link rel="shortcut icon" href="img/favicon2.ico" />
+  <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
 
 </head>
+
 <body>
-  
+  <div id="wrapper">
+    <header id="header">
+      <h1 class="logo">
+        <span class="logo-title">Tororonpi's Portfolio</span>
+        <span class="logo-desc">Web Engineer</span>
+      </h1>
+    </header>
+    <nav id="gnav">
+      <ul>
+        <li><i class="fas fa-user fa-lg"><a href="#profile">PROFILE</a></i></li>
+        <li><i class="fas fa-user fa-lg"><a href="#skill">SKILL</a></i></li>
+        <li><i class="fas fa-user fa-lg"><a href="#works">WORKS</a></i></li>
+        <li><i class="fas fa-user fa-lg"><a href="#contact">CONTACT</a></i></li>
+      </ul>
+    </nav>
+
+    <main id="contents">
+      <section class="section" id="profile">
+        <div class="inner">
+          <div class="section-title-block">
+            <h2 class="section-title"><i class="fas fa-user"><span class="section-title-css">PROFILE</span></i></h2>
+          </div>
+          <div class="two-column-wrapper">
+            <div class="two-column-image profile">
+              <img src="img/profile/profile.JPG" alt="">
+            </div>
+            <div class="two-columndesc">
+              <p class="text">
+                　はじめまして。平成4年生まれの27歳エンジニアのTororonpiと申します。
+                　新卒では中小企業のSIerに入社しました。常駐先ではウォータフォール型でデスクトップアプリ開発に携わりました。1年目は開発、2年目は問い合わせ対応と業務効率化のツールを作成です。
+                ただ、自分で勉強していくうちにもっと開発をしたい！！Webに携わりたい！！と思い転職を決意。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="skill">
+        <div class="inner">
+          <div class="section-title-block">
+            <h2 class="section-title"><i class="fas fa-user"><span class="section-title-css">SKILL</span></i></h2>
+          </div>
+          <p class="section-desc"></p>
+        </div>
+
+        <div class="card-wrapper">
+          <div class="card">
+            <div class="skill-desc">
+              <h3 class="skill-desc-title"><i class="fas fa-desktop"></i>フロントエンド</h3>
+              <p>基本的なことは一通りできます。CSSフレームワークはBootstrapを使いました。</p>
+              <table class="table table-borderless">
+                <thead>
+                  <tr>
+                    <th scope="col">　　</th>
+                    <th scope="col">技術</th>
+                    <th scope="col">経験年数</th>
+                    <th scope="col">スキル</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th class="skill-icon"><img src="img/skill/html-5.svg" alt="" class="img-responsive"></th>
+                    <th scope="row">HTML5</th>
+                    <td>1年</td>
+                    <td><span class="rating">
+                        <p class="rate rate4"></p>
+                      </span></td>
+                  </tr>
+                  <tr>
+                    <th class="skill-icon"><img src="img/skill/css-3.svg" alt="" class="img-responsive"></th>
+                    <th scope="row">CSS3</th>
+                    <td>1年</td>
+                    <td><span class="rating">
+                        <p class="rate rate4"></p>
+                      </span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="skill-desc">
+              <h3 class="skill-desc-title"><i class="fas fa-desktop"></i>バックエンド</h3>
+              <p>直近ではVue.jsを使用して開発しています。</p>
+              <table class="table table-borderless">
+                <thead>
+                  <tr>
+                    <th scope="col">　　</th>
+                    <th scope="col">技術</th>
+                    <th scope="col">経験年数</th>
+                    <th scope="col">スキル</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th class="skill-icon"><img src="img/skill/javascript.svg" alt="" class="img-responsive"></th>
+                    <th scope="row">javascript</th>
+                    <td>2年</td>
+                    <td><span class="rating">
+                        <p class="rate rate4"></p>
+                      </span></td>
+                  </tr>
+                  <tr>
+                    <th class="skill-icon"><img src="img/skill/jquery.svg" alt="" class="img-responsive"></th>
+                    <th scope="row">jQuery</th>
+                    <td>1年</td>
+                    <td><span class="rating">
+                        <p class="rate rate4"></p>
+                      </span></td>
+                  </tr>
+                  <tr>
+                    <th class="skill-icon"><img src="img/skill/vue.svg" alt="" class="img-responsive"></th>
+                    <th scope="row">Vue.js</th>
+                    <td>半年</td>
+                    <td><span class="rating">
+                        <p class="rate rate4"></p>
+                      </span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="skill-desc">
+              <h3 class="skill-desc-title"><i class="fas fa-database"></i>データベース</h3>
+              <p>直近ではMySQLを使用しました。</p>
+              <table class="table table-borderless">
+                <thead>
+                  <tr>
+                    <th scope="col">　　</th>
+                    <th scope="col">技術</th>
+                    <th scope="col">経験年数</th>
+                    <th scope="col">スキル</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th class="skill-icon"><img src="img/skill/oracle.svg" alt="" class="img-responsive"></th>
+                    <th scope="row">Oracle</th>
+                    <td>1年</td>
+                    <td><span class="rating">
+                        <p class="rate rate4"></p>
+                      </span></td>
+                  </tr>
+                  <tr>
+                    <th class="skill-icon"><img src="img/skill/mysql.svg" alt="" class="img-responsive"></th>
+                    <th scope="row">MySQL</th>
+                    <td>1年</td>
+                    <td><span class="rating">
+                        <p class="rate rate4"></p>
+                      </span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="skill-desc">
+              <h3 class="skill-desc-title"><i class="fas fa-server"></i>インフラ・サーバー</h3>
+              <p>直近ではAWSを使用しました。</p>
+              <table class="table table-borderless">
+                <thead>
+                  <tr>
+                    <th scope="col">　　</th>
+                    <th scope="col">技術</th>
+                    <th scope="col">経験年数</th>
+                    <th scope="col">スキル</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th class="skill-icon"><img src="img/skill/aws.svg" alt="" class="img-responsive"></th>
+                    <th scope="row">AWS(EC2, Amplify)</th>
+                    <td>1年</td>
+                    <td><span class="rating">
+                        <p class="rate rate4"></p>
+                      </span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="skill-desc">
+              <h3 class="skill-desc-title"><i class="fas fa-toolbox"></i>その他</h3>
+              <p>開発等で使用したツールやFWです。</p>
+              <table class="table table-borderless">
+                <thead>
+                  <tr>
+                    <th scope="col">　　</th>
+                    <th scope="col">技術</th>
+                    <th scope="col">経験年数</th>
+                    <th scope="col">スキル</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th class="skill-icon"><img src="img/skill/git-icon.svg" alt="" class="img-responsive"></th>
+                    <th scope="row">git</th>
+                    <td>1年</td>
+                    <td><span class="rating">
+                        <p class="rate rate3"></p>
+                      </span></td>
+                  </tr>
+                  <tr>
+                    <th class="skill-icon"><img src="img/skill/subversion.png" alt="" class="img-responsive"></th>
+                    <th scope="row">SVN</th>
+                    <td>1年</td>
+                    <td><span class="rating">
+                        <p class="rate rate3"></p>
+                      </span></td>
+                  </tr>
+                  <tr>
+                    <th class="skill-icon"><img src="img/skill/slack-icon.svg" alt="" class="img-responsive"></th>
+                    <th scope="row">Slack</th>
+                    <td>1年</td>
+                    <td><span class="rating">
+                        <p class="rate rate3"></p>
+                      </span></td>
+                  </tr>
+                  <tr>
+                    <th class="skill-icon"><img src="img/skill/MicrosoftTeams.png" alt="" class="img-responsive"></th>
+                    <th scope="row">Microsoft Teams</th>
+                    <td>1年</td>
+                    <td><span class="rating">
+                        <p class="rate rate3"></p>
+                      </span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="skill-desc">
+              <h3 class="skill-desc-title"><i class="fas fa-list-alt"></i>保有資格</h3>
+              <p>社会人になってから取得したものです。</p>
+              <table class="table table-borderless">
+                <thead>
+                  <tr>
+                    <th scope="col">資格</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">応用情報技術者</th>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+          </div>
+      </section>
+
+      <section class="section" id="works">
+        <div class="inner">
+          <div class="section-title-block">
+            <h2 class="section-title"><i class="fas fa-tasks fa-lg"></i><span class="section-title-css">WORKS</span>
+            </h2>
+            <div class="section-desc"></div>
+          </div>
+
+          <div class="card-wrapper mygallery">
+
+            <figure class="card">
+              <img src="img/works/thumb/portfolio.png" alt="" class="card-image">
+              <figcation class="card-caption">
+                <p class="card-caption-title">ポートフォリオ</p>
+                <p class="card-caption-info">自分自身のポートフォリオです。</p>
+                <p class="card-caption-title">HTML/CSS/Bootstrap4</p>
+                <p class="card-caption-url">GitHub</p>
+              </figcation>
+            </figure>
+
+            <figure class="card">
+              <img src="img/works/thumb/portfolio.png" alt="" class="card-image">
+              <figcation class="card-caption">
+                <p class="card-caption-title">ポートフォリオ</p>
+                <p class="card-caption-info">自分自身のポートフォリオです。</p>
+                <p class="card-caption-title">HTML/CSS/Bootstrap4</p>
+                <p class="card-caption-url">GitHub</p>
+              </figcation>
+            </figure>
+
+            <figure class="card">
+              <img src="img/works/thumb/portfolio.png" alt="" class="card-image">
+              <figcation class="card-caption">
+                <p class="card-caption-title">ポートフォリオ</p>
+                <p class="card-caption-info">自分自身のポートフォリオです。</p>
+                <p class="card-caption-title">HTML/CSS/Bootstrap4</p>
+                <p class="card-caption-url">GitHub</p>
+              </figcation>
+            </figure>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="inner">
+          <div class="section-title-block">
+            <h2 class="section-title"><i class="fas fa-envelope fa-lg"></i><span
+                class="section-title-css">CONTACT</span></h2>
+            <p class="section-desc">
+              何かありましたらTwitterのDMよりご連絡ください。
+            </p>
+          </div>
+          <div class="contact-wrapper">
+            <div class="contact-list" style="text-align:center;">
+              <a href="http://twitter.com/_ngtr_p" target="_blank" rel="noopener noreferrer"><img
+                  src="img/contact/icon_contact.jpg" alt="" class="contact-tag"><span
+                  class="contact-list-desc">Twitter</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <div class="inner">
+        <nav class="footer-link">
+          <ul>
+            <li><a href="#profile">PROFILE</a></li>
+            <li><a href="#skill">SKILL</a></li>
+            <li><a href="#works">WORKS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+        <p class="copyright">Copyright&copy: Tororonpi . All Rights Reserved.</p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Root element of PhotoSwipe. Must have class pswp. -->
+  <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe.
+             It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+      <!-- Container that holds slides.
+                PhotoSwipe keeps only 3 of them in the DOM to save memory.
+                Don't modify these 3 pswp__item elements, data is added later on. -->
+      <div class="pswp__container">
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+      </div>
+
+      <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+      <div class="pswp__ui pswp__ui--hidden">
+
+        <div class="pswp__top-bar">
+
+          <!--  Controls are self-explanatory. Order can be changed. -->
+
+          <div class="pswp__counter"></div>
+
+          <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+
+
+          <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+          <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+          <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+          <!-- element will get class pswp__preloader--active when preloader is running -->
+          <div class="pswp__preloader">
+            <div class="pswp__preloader__icn">
+              <div class="pswp__preloader__cut">
+                <div class="pswp__preloader__donut"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+          <div class="pswp__share-tooltip"></div>
+        </div>
+
+        <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+        </button>
+
+        <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+        </button>
+
+        <div class="pswp__caption">
+          <div class="pswp__caption__center"></div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div style="position: relative"><a href="https://www.codmon.com/mypage/" class="codmon-login-widget"
+        target="_blank">Codmon</a>
+      <script src="https://www.codmon.com/mypage/js/login-widget.js"></script>
+      <span style="font-size: 11px;line-height: 1.2;position:absolute;top: 364px;left: 36px;">powerd by <a
+          href="https://www.codmon.com/" target="_blank">保育園ICTシステム コドモン</a></span></div>
+
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type='text/javascript' src="js/photoswipe/photoswipe.min.js"></script>
+  <script type='text/javascript' src="js/photoswipe/photoswipe-ui-default.js"></script>
+  <script type='text/javascript' src="js/photoswipe/photoswipe_setup.js"></script>
+  <script type='text/javascript' src="js/script.js"></script>
+
+
 </body>
+
 </html>
